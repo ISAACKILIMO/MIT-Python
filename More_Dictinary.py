@@ -21,12 +21,28 @@ Created on Sat May 18 21:23:24 2024
 # defaults = {"designation": 'Developer', "salary": 8000}
 
 # print(my_dictionary(employees, defaults))
-sample_dict = {
-    "name": "Kelly",
-    "age": 25,
-    "salary": 8000,
-    "city": "New york"}
-ls=[]
-for k in sample_dict.keys():
-    ls.append(k)
-print(ls)
+# sample_dict = {
+#     "name": "Kelly",
+#     "age": 25,
+#     "salary": 8000,
+#     "city": "New york"}
+# ls=[]
+# for k in sample_dict.keys():
+#     ls.append(k)
+# print(ls)
+
+my_value=int(input("Enter the value"))
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+for k in sample_dict.values():
+    if my_value in sample_dict.values():
+        print('value present')
+    else:
+        print('Value unavailable')
+        
+my_value = int(input("Enter the value: "))
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+
+if my_value in sample_dict.values():
+    print('Value present')
+else:
+    print('Value unavailable')

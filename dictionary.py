@@ -47,9 +47,18 @@ Created on Sat May 18 08:20:12 2024
 
 # my_list = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 # print(create_dic(my_list))
-ls=[]
-for i in range(10, 20):
-    for k in range(30,40):
-        ls.append(i)
-        ls.append(k)
-print(ls)
+
+# my_list = ["apple", "banana", "cherry"]
+# tropical_fruits = ["mango", "pineapple", "papaya"]
+# fruit_list=my_list+tropical_fruits
+# print(fruit_list)
+# my_list.extend(tropical_fruits)
+# print(my_list)
+
+my_list = ["apple", "banana", "cherry"]
+my_list[1]='Orange'
+print(my_list)
+my_list.reverse()
+print(my_list)
+my_list.insert(1, 'Banana')
+print(my_list)

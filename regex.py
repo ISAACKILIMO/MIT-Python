@@ -14,3 +14,11 @@ def email_match(email):
 
 gmail = 'isaackilimo#@gmail.com'
 print(email_match(gmail))
+
+pat=r'\d{3}-\d{3}-\d{4}'
+phon='123-456-7981'
+if re.match(pat,phon):
+    print('Valid')
+else:
+    print("invalid Phone number")
+    

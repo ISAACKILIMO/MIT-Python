@@ -15,3 +15,4 @@ for i in lst:
         for t in i:
             ls.append(t)
 print(ls)
+

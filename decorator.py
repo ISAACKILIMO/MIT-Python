@@ -8,7 +8,7 @@ Created on Mon May 27 09:01:09 2024
 def hello(func):
     def inner():
         print("Hello")
-        #func()
+        func()
     return inner
 
 def name():

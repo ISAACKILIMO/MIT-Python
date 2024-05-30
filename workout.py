@@ -25,3 +25,6 @@ class workout(object):
     def set_end(self, end):
         self.end=end
         
+print(workout.__dict__.keys())
+# print()
+print(workout.__dict__.values())

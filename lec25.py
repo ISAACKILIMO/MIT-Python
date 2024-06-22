@@ -285,7 +285,7 @@ plt.plot(pops)
 plt.title('Population Size of Countries July 2017')
 plt.ylabel('Population')
 plt.xlabel('Country Rank Based on Size')
-plt.semilogy()
+plt.semilogx()
 
 # ## Investigate the first digits
 pops = getCountryPops('lec25_countryPops.txt')

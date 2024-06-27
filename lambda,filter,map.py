@@ -19,14 +19,21 @@ Created on Fri Jun 21 09:31:32 2024
 # print((t1 + t2)[3])
 # print((t1 + t2)[2:5])
 
-numbers = [1, 2, 3, 4, 5]
-squared = list(map(lambda x: x**2, numbers))
-print(squared)
-# squared contains [1, 4, 9, 16, 25]
+# numbers = [1, 2, 3, 4, 5]
+# squared = list(map(lambda x: x**2, numbers))
+# print(squared)
+# # squared contains [1, 4, 9, 16, 25]
 
-number = [1, 2, 3, 4, 5]
-odd_numbers = list(filter(lambda x: x % 2 != 0, number))
-print(odd_numbers)
-# odd_numbers contains [1, 3, 5]
+# number = [1, 2, 3, 4, 5]
+# odd_numbers = list(filter(lambda x: x % 2 != 0, number))
+# print(odd_numbers)
+# # odd_numbers contains [1, 3, 5]
 
-print((lambda x: x**2)(6))
+# print((lambda x: x**2)(6))
+# print('Yankees rule,','But just recently. ')
+
+se='sndfa'
+lst=[]
+for s in se:
+    lst.append(s)
+print(tuple(lst))    

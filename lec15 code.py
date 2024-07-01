@@ -46,14 +46,14 @@ def mult_recur_verbose(a, b):
 ############### YOU TRY IT #################
 # Calculate n**p recursively by writing this function
 def power_recur(n, p):
-    if ____ :
-        return ____
-    elif ____ :
-        return ____
+    if p==1:
+        return n
+    # elif ____ :
+        # return ____
     else:
-        return ____
+        return n*power_recur(n, p-1)
 
-# print(power_recur(2,3))  # prints 8
+print(power_recur(2,3))  # prints 8
 
 ################################################
     

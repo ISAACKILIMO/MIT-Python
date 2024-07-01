@@ -102,7 +102,7 @@ def find_grades(grades, students):
   
 
 d = {'Ana':'B', 'Matt':'C', 'John':'B', 'Katy':'A'}
-print(find_grades(d, ['Matt', 'Katy'])) # returns ['C', 'A']
+# print(find_grades(d, ['Matt', 'Katy'])) # returns ['C', 'A']
 
 ########################################################
 
@@ -113,6 +113,15 @@ def find_in_L(Ld, k):
         k is an int
     Returns True if k is a key in any dicts of L and False otherwise """
     # your code here
+    for term in Ld:
+        lst=(list(term.keys()))
+        print(lst)
+        for i in range(len(lst)):
+            # print(i)
+            if lst[i]==k:
+                return True
+    return False
+            
 
   
 d1 = {1:2, 3:4, 5:6}
@@ -130,13 +139,18 @@ def count_matches(d):
     """ d is a dict
     Returns how many entries in d have the key equal to its value """
     # your code here
+    count=0
+    for k,v in d.items():
+        if k==v:
+            count+=1
+    return count
 
 
 d = {1:2, 3:4, 5:6}
-# print(count_matches(d))   # prints 0
+print(count_matches(d))   # prints 0
 
 d = {1:2, 'a':'a', 5:5}
-# print(count_matches(d))   # prints 2
+print(count_matches(d))   # prints 2
 
 ##############################################################
 

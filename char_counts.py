@@ -14,8 +14,7 @@ def char_counts(s):
     # your code here
     vow=('a','e','i','o','u')
     conso=('b','c','d','f','g','h','j','k','l','m','n','s','p','q','r','t','v','w','x','y','z')
-    sen=s.split()
-    print(sen)
+  
     vowel=0
     consonant=0
     lst=[]
@@ -30,5 +29,6 @@ def char_counts(s):
     return (vowel,consonant)
 
 
-print(char_counts("abcd"))  # prints (1,3)
+print(f'There are {char_counts("abcd")[0]} vowels and {char_counts("abcd")[1]} consonants')  # prints (1,3)
 print(char_counts("zcght"))  # prints (0,5)
+print(f'There are {char_counts("zcght")[0]} vowels and {char_counts("zcght")[1]} consonants')

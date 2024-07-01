@@ -85,8 +85,8 @@ def char_counts(s):
     return (vowel,consonant)
 
 
-print(char_counts("abcd"))  # prints (1,3)
-print(char_counts("zcght"))  # prints (0,5)
+# print(char_counts("abcd"))  # prints (1,3)
+# print(char_counts("zcght"))  # prints (0,5)
 
 ##################################################
 
@@ -94,7 +94,7 @@ print(char_counts("zcght"))  # prints (0,5)
 ###################
 ### example of variable number of arguments
 ###################
-def mean(*args):
+def means(*args):
     """
     Assumes at least one argument and all arguments are numbers. 
     Returns the mean of the arguments.
@@ -104,8 +104,8 @@ def mean(*args):
         tot += a
     return tot/len(args)
 
-# print(mean(1,2,3,4,5,6))
-# print(mean(6,0,9))
+# print(means(1,2,3,4,5,6))
+# print(means(6,0,9))
 
 ## Compare above code with this one:
 # Note args vs *args and mean((6,0,9)) vs mean(6,0,9)
@@ -154,10 +154,16 @@ def sum_and_prod(L):
     is the product of all elements in L 
     """
     # your code here
+    prod=1
+    tot=0
+    for i in L:
+        tot+=i
+        prod*=i
+    return ("The sum and product respectively are:", (tot,prod))
 
  
 
-# print(sum_and_prod([4,6,2,5]))   # prints (17, 240)
+print(sum_and_prod([4,6,2,5]))   # prints (17, 240)
 
 
 
